@@ -6,7 +6,11 @@ const filterByLang = (repos, lang) => {
 }
 
 const clearInformation = (repos) => {
-  return repos.map(({ name, description, owner: {avatar_url} }, index) => ({id: index + 1, name, description, avatar: avatar_url}))
+  let reposObjectFormat = {};
+  repos.forEach(({ name, description, owner: { avatar_url } }, index) => {
+    reposObjectFormat = {...reposObjectFormat, [`repo${index + 1}`]: { name, description, avatar: avatar_url } };
+  });
+  return reposObjectFormat;
 }
 
 module.exports = async (gitHubUser, language) => {
