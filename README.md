@@ -20,4 +20,4 @@ Ela irá ficar rodando na porta 3000
 para acessa-la basta entrar no endereço localhost:3000
 
 ## Sobre o Bot
-O Bot foi construido no portal da Take e seu fluxo está em um arquivos JSON de nome lorabot.json que está localizado no diretório "flow"
+O Bot foi construido no portal da Take e seu fluxo está em um arquivo JSON de nome lorabot.json que está localizado no diretório "flow"
